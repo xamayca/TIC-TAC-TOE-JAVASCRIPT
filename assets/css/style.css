@@ -1,0 +1,88 @@
+body{
+	background-color: rgb(8, 8, 8);
+}
+
+h1 {
+	text-align: center;
+	color:white;
+}
+
+main {
+	width: 25rem;
+	height: 25em;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid black;
+}
+
+main div.cases {
+	width: calc((100% / 3) - 2px);
+	height: calc((100% / 3) - 2px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 3rem;
+	background: rgb(219, 219, 219);
+	border: 1px solid black;
+}
+
+main div.cases:hover{
+	background-color:rgb(204, 204, 204) ;
+	cursor:pointer;
+}
+
+#message{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 1em;
+	width: 100%;
+	height: 10%;
+	font-size: 1.1em;
+	font-weight: bold;
+	border: 0.15em solid white;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#restart-btn{
+	cursor: pointer;
+	border:none;
+	padding: 1em;
+	margin-top: 1em;
+	font-weight: bold;
+	background-color: rgb(83, 81, 64);
+	transition: all 0.3s ease-in-out;
+}
+
+#restart-btn:hover{
+	background-color: rgb(125, 125, 125);
+	transition: all 0.3s ease-in-out;
+}
+
+.go-play{
+	background-color: blue;
+	color:white;
+}
+
+.warning{
+	background-color: orange;
+	color:black;
+}
+
+.success{
+	background-color: green;
+	color:white;
+}
+
+.win{
+	background-color: rgb(57, 57, 57) !important;
+	color: white !important;
+}
