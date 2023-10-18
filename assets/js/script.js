@@ -159,7 +159,10 @@ restartBtnHTML.addEventListener('click', function () {
 		// Sinon Efface l'ensemble de la grille //
 	} else {
 		for (let i = 0; i < casesHTML.length; i++) {
+			// Reinitialisation du message par défaut //
 			messageHTML.textContent = `A vous de jouer !`
+			messageHTML.classList.remove('success');
+			messageHTML.classList.remove('warning');
 			messageHTML.classList.add('go-play');
 			// Retire les classe de l'ensemble des 'fa' pour vidé les cases //
 			casesHTML[i].classList.remove('fa')
@@ -171,12 +174,6 @@ restartBtnHTML.addEventListener('click', function () {
 			casesHTML[winCombos[i][1]].classList.remove('win');
 			casesHTML[winCombos[i][2]].classList.remove('win');
 		};
-
-		// Reinitialisation du message par défaut //
-		messageHTML.textContent = `A vous de jouer !`
-		messageHTML.classList.remove('success');
-		messageHTML.classList.remove('warning');
-		messageHTML.classList.add('go-play');
 	};
 
 });
